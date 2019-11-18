@@ -1,0 +1,28 @@
+{
+    "name": "elise-typescript-demo",
+    "version": "1.0.0",
+    "description": "Simple Getting Started Project for Elise Graphics Library with TypeScript and Browserify",
+    "main": "bundle.js",
+    "dependencies": {
+        "elise-graphics": "^1.0.5"
+    },
+    "devDependencies": {
+        "tsify": "^4.0.1",
+        "typescript": "^3.7.2"
+    },
+    "scripts": {
+        "build": "browserify main.ts -p [ tsify --noImplicitAny ] > bundle.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thetheosopher/elise-typescript-demo.git"
+    },
+    "keywords": [ "elise-graphics", "browserify", "typescript", "canvas", "graphics" ],
+    "author": "Michael A. McCloskey",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thetheosopher/elise-typescript-demo/issues"
+    },
+    "homepage": "https://github.com/thetheosopher/elise-typescript-demo#readme"
+}
